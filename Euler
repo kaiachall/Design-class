@@ -10,6 +10,23 @@
 >>>print s
 233168
 
+#Problem 2
+##first I need a function that will give me the fibonacci sequence
+>>>def Fib(n):
+	if n == 1: return 1
+	elif n == 2: return 2
+	else: return Fib(n-1)+Fib(n-2)
+##the sum s starts at zero
+>>>s=0
+##I want the first imput of Fib to be 1
+>>>i=1
+##I want a loop that adds Fib(i) to s only if it is divisible by 2 with zero remainder and stop when Fib(i) reaches 4 million
+>>>while Fib(i) <=4000000:
+	if Fib(i)%2 == 0:
+		s=s+Fib(i)
+	i=i+1
+>>>print s
+4613732
 
 
 
