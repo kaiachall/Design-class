@@ -28,5 +28,15 @@
 >>>print s
 4613732
 
-
+#Problem 3
+##I want n to start as 600851475143 and reduce down to the largest prime factor
+>>>n=600851475143
+##The first factor will be one
+>>>f=1
+##since f is a factor of n, it should not be bigger than the square root of n, so the loop should stop before f*f=n 
+>>>while f*f < n:
+	while n%f == 0: #n divided by f gives zero remainder, meaning f is a factor of n
+		n=n/f #divides n down to a factor until there is no more factors left, meaning n is now prime
+	f=f+1
+>>>print n
 
