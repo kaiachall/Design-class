@@ -1,1 +1,15 @@
+#Problem 1
+#First I want to makea set of all multiples of 3 from 1 to 999
+>>>a = set(xrange(0,1000,3)) 
+#Now a set of multiples of 5
+>>>b = set(xrange(0,1000,5))
+#I want a sum of all the elements in both sets excluding multiples, so I'll create a new set of the union of the two
+>>>c = a.union(b)
+#Now I just need to sum all the elements in c
+>>>s = sum(c)
+>>>print s
+233168
+
+
+
 
